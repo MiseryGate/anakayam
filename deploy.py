@@ -108,7 +108,7 @@ if menu == "Prediksi":
     st.write("## ", raw[(raw['PROVINSI'] == provinsi) & (raw['Tahun'] == 2022)]['PREVALENSI'].values[0])
     
     if st.button("Prediksi"):
-        st.write("Prediksi Sukses")
+        st.write("## Prediksi Sukses")
         #define X & y
         X = data.drop(['PREVALENSI','Tahun'], axis=1)
         y = data['PREVALENSI']
