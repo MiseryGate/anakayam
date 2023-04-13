@@ -104,7 +104,7 @@ if menu == "Prediksi":
             if item == provinsi and raw['Tahun'] == 2022:
                 st.write(input_dak)
         
-    st.write("Tingkat Prevalensi Tahun 2023 pada Provinsi : ",str(provinsi))
+    st.write("Tingkat Prevalensi Tahun 2022 pada Provinsi : ",str(provinsi))
     st.write("## ", raw[(raw['PROVINSI'] == provinsi) & (raw['Tahun'] == 2022)]['PREVALENSI'].values[0])
     
     if st.button("Prediksi"):
