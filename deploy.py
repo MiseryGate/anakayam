@@ -21,7 +21,7 @@ import pickle
 data = pd.read_excel("./data_modeling1.xlsx")
 loaded_model = pickle.load(open('./model.pkl', 'rb'))
 
-LOGO_IMAGE = "./logo.jpg"
+LOGO_IMAGE = "./logo.jpeg"
 #Disable Warning
 st.set_option('deprecation.showPyplotGlobalUse', False)
 #Set Size
