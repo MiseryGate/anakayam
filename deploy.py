@@ -43,7 +43,7 @@ st.markdown("<h1 style='text-align: center; color: #243A74; font-family:sans-ser
 menu = st.sidebar.selectbox("Select Menu", ("Dashboard", "Prediksi"))
 if menu == "Dashboard":
     st.write("Menu Dashboard")
-    components.iframe("https://lookerstudio.google.com/s/h1TVDk9DxD8", width=1200, height=1200)
+    components.iframe("https://lookerstudio.google.com/u/0/reporting/a283c968-7889-45b4-b085-3e8a33a785c2/page/p_dmc58i934c?s=t6x84k0EHls", width=1200, height=1200)
 if menu == "Prediksi":
     st.write("Menu Prediksi")
     st.write(data.head())
