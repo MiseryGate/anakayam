@@ -3,4 +3,4 @@ matplotlib
 numpy
 pandas
 seaborn
-sklearn
+sklearn == 1.2.2
