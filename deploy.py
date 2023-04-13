@@ -31,7 +31,7 @@ dict = {"ACEH":0, "SUMATERA UTARA":33, "SUMATERA BARAT":31, "RIAU":25, "JAMBI":7
 "SULAWESI TENGAH":28, "SULAWESI SELATAN":27, "SULAWESI TENGGARA":29, "GORONTALO":6,
 "SULAWESI BARAT":26, "MALUKU":19, "MALUKU UTARA":20, "PAPUA BARAT":24,"PAPUA":23}
 
-LOGO_IMAGE = "./logo.jpeg"
+LOGO_IMAGE = "./logo_baru.png"
 #Disable Warning
 st.set_option('deprecation.showPyplotGlobalUse', False)
 #Set Size
@@ -53,7 +53,18 @@ st.markdown("<h1 style='text-align: center; color: #243A74; font-family:sans-ser
 menu = st.sidebar.selectbox("Select Menu", ("Dashboard", "Prediksi"))
 if menu == "Dashboard":
     st.write("Menu Dashboard")
-    st.write("## Link ")
+    st.markdown("""<a style='display: block; text-align: center; font-size:40px; ' href="https://drive.google.com/drive/folders/1dq9QgqbUWlpIgCNIwSYT9Q-yOHHuoO25">Tautan GDrive</a>""", unsafe_allow_html=True)
+    st.markdown("""<a style='display: block; text-align: center; font-size:40px; ' href="https://bit.ly/DashboardAnakAyam">Tautan Dashboard</a>""", unsafe_allow_html=True)
+
+      # CSS to inject contained in a string
+    hide_table_row_index = """
+                    <style>
+                    .css-1q8dd3e.edgvbvh1 {display:none}
+                    </style>
+                    """
+
+        # Inject CSS with Markdown
+    st.markdown(hide_table_row_index, unsafe_allow_html=True)
 if menu == "Prediksi":
     st.write("Menu Prediksi")
     df = pd.DataFrame(dict,index=[0])
